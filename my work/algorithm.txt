@@ -1,0 +1,7 @@
+algorithm : it is a prcess which is followed step by step
+step 1:stat the gas
+step 2:take an input (bowl,milk,water,tea,etc)
+step 3:boiling
+step 4:if tea is good,then go to next step,but if it is bad then goto step1.
+step 5: output (serve)
+step 6:stop.
