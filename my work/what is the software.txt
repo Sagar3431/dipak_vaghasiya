@@ -1,0 +1,37 @@
+SDLC : software development lifecycle
+there are 7 steps in SDLC
+1) requirement
+2) analysis
+3) designing
+4) development
+5) testing
+6) deployment
+7) maintanance.
+
+
+
+program : a set of instructions is callad a program.
+software: it is set of program 
+types of softwares.
+1)system software
+2)application software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
