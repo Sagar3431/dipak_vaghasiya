@@ -5,6 +5,10 @@ void main()
 {
 	int num1=42;
 	int num2=23;
+	printf("\nEnter num1=");
+	scanf("%d",&num1);
+	printf("\nEnter num2=");
+	scanf("%d",&num2);
 	printf("number1=%d \nnumber2%d",num1,num2);
 	//printf("\nnumber2=%d,",num2);
 	printf("\nAddition: %d",(num1+num2));

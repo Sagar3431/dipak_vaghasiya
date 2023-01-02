@@ -11,11 +11,11 @@
  	
  	if(a>b)
  	{
- 		printf("\n a is greter");
+ 		printf("\n a is greter b");
 	 }
     else
     {
-    	printf("\n b is greter");
+    	printf("\n b is not greter a");
 	}
  }
  
