@@ -1,13 +1,13 @@
 #include<stdio.h>
 
-
 void main()
+
 {
-	int i=100;
-	
-	while(i<=1)
+	int i=1;
+	do
 	{
 		printf("%d\n",i);
-		i--;
+		i++;
 	}
+	while(i<=10);
 }
