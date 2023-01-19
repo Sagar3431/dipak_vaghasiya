@@ -9,6 +9,7 @@ void main()
 	printf("Enter B :");
 	scanf("%d",&b);
 	printf("\nA = %d, B = %d",a,b);
+	printf("\n============choice calculator==========");
 	printf("\n\npress 1.add\npress 2.subtract\npress 3.multiply\npress 4.division");
 	printf("\nEnter your choice ?");
 	scanf("%d",&choice);

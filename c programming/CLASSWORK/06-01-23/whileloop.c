@@ -3,11 +3,11 @@
 
 void main()
 {
-	int i=10;
+	int i=0;
 	
-	while(i>=1)
+	while(i<=10)
 	{
 		printf("%d\n",i);
-		i--;
+		i++;
 	}
 }
