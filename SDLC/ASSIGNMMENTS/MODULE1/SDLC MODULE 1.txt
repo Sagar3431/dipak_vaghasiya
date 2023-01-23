@@ -1,0 +1,55 @@
+Software Development Life Cycle Process
+SDLC Cycle
+SDLC Phases
+#1) Requirement Gathering and Analysis
+#2) Design
+#3) Implementation or Coding
+#4) Testing
+#5) Deployment
+#6) Maintenance
+Software Development Life Cycle Models
+#1) Waterfall Model
+#2) V-Shaped Model
+#3) Prototype Model
+#4) Spiral Model
+#5) Iterative Incremental Model 
+#6) Big Bang Model
+#7) Agile Model
+ś
+1) what is software?
+
+Software is a set of instructions, data or programs used to operate computers and execute specific tasks.
+It is the opposite of hardware, which describes the physical aspects of a computer.
+Software is a generic term used to refer to applications, scripts and programs that run on a device.
+It can be thought of as the variable part of a computer, while hardware is the invariable part.
+
+
+2) Types ofsoftware
+
+The two main categories of software are application software and system software.
+An application is software that fulfills a specific need or performs tasks.
+System software is designed to run a computer's hardware and provides a platform for applications to run on top of.
+
+     types of softwares.
+    1)application software
+    2)system software.
+     What is the difference between Application software and system software?
+  System software runs when the system is turned on and stop when the system is turned off.
+  While application software runs as per the user's request.
+  Example: System software is operating system, etc. Example: Application software are Photoshop, VLC player 
+
+
+3) What is Software Development Methodology? 
+
+
+        An Introduction To Software Development Methodologies.
+
+There are numerous ways to organise the process of developing and writing code.
+Although it is impossible to mandate one way as the only path, there is a great deal to learn from each one.
+Learn about the benefits to working in different formats and procedural approaches in this overview on code-creation techniques.
+
+     Software development methodology is a process or series of processes used in software development.
+ Again, quite broad but that it is things like a design phase, a development phase. It is ways of thinking about things like waterfall being a non iterative kind of process.
+ Generally it takes the form of defined phases. It is designed to describe the how of the life cycle of a piece of software.
+
+It is also codified communication. So you’re actually setting a set of norms between a group of people that say this is how you’re going to work and this is how you’re going to pass information between each of you in certain ways; whether that is documentation, whether that is discussion, whether that is drawings on paper.
