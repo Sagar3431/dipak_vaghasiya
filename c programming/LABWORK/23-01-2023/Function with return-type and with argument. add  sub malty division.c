@@ -3,25 +3,25 @@
 int add(int d,int g)
 {
 	printf("\n Inside UDF A = %d, B = %d",d,g);
-	printf("\nAddition");
+	printf("\n Addition");
 	return d+g;
 }
 int sub(int d,int g)
 {
 	printf("\n Inside UFD UDF A = %d, B = %d",d,g );
-	printf("\nSubtraction");
+	printf("\n Subtraction");
 	return d-g;
 }
 int multy(int d,int g)
 {
 	printf("\n Inside UFD UDF A = %d, B = %d",d,g );
-	printf("\nMultipliction");
+	printf("\n Multipliction");
 	return d*g;
 }
 int div(int d,int g)
 {
 	printf("\n Inside UFD UDF A = %d, B = %d",d,g );
-	printf("\nDivision");
+	printf("\n Division");
 	return d/g;
 }
 void main()
@@ -31,7 +31,11 @@ void main()
 	scanf("%d",&a);
 	printf("\n Enter B :");
 	scanf("%d",&b);
-	printf("\n A = %d,B = %d",a,b);
+	sum = add(a,b);
+	sum = sub(a,b);
+	sum = multy(a,b);
+	sum = div(a,b);
+	//printf("\n A = %d,B = %d",a,b);
 	printf("\n\n\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 calculator \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\n");
 	printf("\n\t\t==============================");
 	printf("\n\t\tPress 1. for addition");

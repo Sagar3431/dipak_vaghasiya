@@ -3,12 +3,19 @@
 void main()
 
 {
+
+	
+	
 	int a,b,choice;
+	char ch='y';
 	printf("Enter A :");
 	scanf("%d",&a);
 	printf("Enter B :");
 	scanf("%d",&b);
 	printf("\nA = %d, B = %d",a,b);
+
+	do{
+	
 	printf("\n============choice calculator==========");
 	printf("\n\npress 1.add\npress 2.subtract\npress 3.multiply\npress 4.division");
 	printf("\nEnter your choice ?");
@@ -25,7 +32,14 @@ void main()
 		       break;
 		default:printf("\nInvalide choice");
 		       break;
-			   	          
+		if(choice= 'y');
+		{
+			printf("\ndo you want to more order y/n : %s");
+			scanf("%s",&choice);
+	    }
+		     
 		       
 	}
+    }while(choice= 'y');
+       
 }
