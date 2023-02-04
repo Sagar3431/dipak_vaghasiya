@@ -30,7 +30,7 @@ int main()
 
         //Salary
         printf("Adrees: ");
-        scanf("%[^\n]s",&employees[i].adrees);
+        scanf("\n%[^\n]s",&employees[i].adrees);
         
          printf("age: ");
         scanf("%d",&employees[i].age);
