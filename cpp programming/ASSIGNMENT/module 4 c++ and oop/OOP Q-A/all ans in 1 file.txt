@@ -1,0 +1,108 @@
+B1 WhatIsclassinObjectOrientedProgrammingLanguage?
+ans:Class : It is a collection of data-members (variables) and member-functions(functions).
+B2 What is an Objectin Object Oriented Programming Language?
+ans:In object-oriented programming (OOP), objects are the things you think about first in designing a program and they are also the units of code that are eventually derived from the process.
+B3 WhatIsDifferenceBetweenClassAndInterface?
+ans:A class can only inherit one class but an interface can extend multiple interfaces. Similarly, a class can implement multiple interfaces but an interface cannot extend a class.
+B4 WhatIsMethodOverloadinginObjectOrientedProgrammingLanguage?
+ans:If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+    If we have to perform only one operation, having same name of the methods increases the readability of the program.
+B5 WhatIsDatahidinginObjectOrientedProgrammingLanguage?
+ans:Data hiding is an object-oriented programming (OOP) technique specifically used to hide internal object details (i.e., data members). Data hiding guarantees exclusive data access to class members only and protects and maintains object integrity by preventing intended or unintended changes and intrusions.
+B6 What arethedifferencesbetweenabstractclassesandinterfaces?
+ans:The Abstract class and Interface both are used to have abstraction. An abstract class contains an abstract keyword on the declaration whereas an Interface is a sketch that is used to implement a class.
+B7 What are the VirtualFunc on inObject Oriented Programming?
+ans:A virtual function is a member function which is declared within a base class and is re-defined (overridden) by a derived class.
+B8 What is Constructor in Object Oriented Programming ?
+ans:What is constructor in object-oriented program?
+In class-based, object-oriented programming, a constructor (abbreviation: ctor) is a special type of subroutine called to create an object. It prepares the new object for use, often accepting arguments that the constructor uses to set required member variables.
+B9 What is Abstract class in Object Oriented Programming?
+ans:An abstract class is a template definition of methods and variables in a specific class, or category of objects. In programming, objects are units of code, and each object is made into a generic class.
+B10 What isFinal Keyword in Object Oriented Programming?
+ans:The final keyword is a non-access modifier used for classes, attributes and methods, which makes them non-changeable (impossible to inherit or override). The final keyword is useful when you want a variable to always store the same value, like PI (3.14159...). The final keyword is called a "modifier".
+B11 What is Pure Virtual funtionin Object Oriented Programming?
+ans:In C++, pure virtual functions are the ones that do not provide an implementation and must be overridden in a derived class. Let's look at how these functions work in C++.
+The keyword virtual is used to specify a virtual function within a class. The following syntax is followed when creating a pure virtual function
+B12 What are Sealed Modifier in Object Oriented Programming?
+ans:Sealed classes are used to restrict the inheritance feature of object oriented programming. Once a class is defined as a sealed class, the class cannot be inherited. The "sealed" modifier is used to define a class as sealed. Sometimes classes are too precious and not designed to be inherited.
+B13 What is Dynamicorrun time Polymorphism in oops ?
+ans:Runtime polymorphism, also known as the Dynamic Method Dispatch, is a process that resolves a call to an overridden method at runtime. The process involves the use of the reference variable of a superclass to call for an overridden method.
+B14 What is Access Modifier in Object Oriented Programming ?
+ans:Access Modifiers (Access Specifiers) are keywords that are used in OOP (object-oriented programming) in order to specify the accessibility of the methods, classes, constructors, and other members of the class. Access Modifier is not a concept but rather keywords that are used in programs.
+B15 What is Friend Function in Object Oriented Programming?
+ans:A friend function of a class is defined outside that class' scope but it has the right to access all private and protected members of the class. Even though the prototypes for friend functions appear in the class definition, friends are not member functions.
+B16 What is Over riding in Object Oriented Programming?
+ans:Method overriding, in object-oriented programming, is a language feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its superclasses or parent classes.
+B17 What is the role of mutable storage class specifier?
+ans:Mutable data members are those members whose values can be changed in runtime even if the object is of constant type. It is just opposite to constant. Sometimes logic required to use only one or two data member as a variable and another one as a constant to handle the data.
+
+
+
+
+
+
+{
+	1) C -> Procedural Oriented Programming Language. (POPL)
+
+	    C++ -> POPL and OOPL (Object Oriented Programming Language)
+
+		C++ -> C + Class
+
+
+	2) C does not support Method overloading
+
+	  C++ suports method overloading.
+
+	3) C contains 32 keywords
+
+	 C++ contains 63/64 keywords.
+
+	
+
+
+
+	OOP : (Object Oriented Programming) Language.
+
+	Features or Pillars of OOP.
+
+	There are 4 important features in OOP.
+
+	1) Encapsulation
+	2) Inheritance
+	3) Polymorphism
+	4) Data Abstraction.
+
+
+
+
+	1) Encapsulation : It is a wrapper class in which all data members and member functions
+		              are wrapped in a single class.
+
+			example : Capsule.
+
+
+	Class : It is a collection of data-members (variables) and member-functions(functions).
+
+	syntax :
+
+		class class-name
+		{
+			access-specifier:
+				//datamembers;
+		};
+
+	Object : It is an instance of a class.
+
+	Why do we create an object?
+
+	- To access the members of the class.
+
+	Lifecycle of an object.
+
+	1) Creation
+	2) Utilization
+	3) Destruction
+	
+	e.g papercup 
+
+}
