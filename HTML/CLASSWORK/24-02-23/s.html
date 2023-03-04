@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Form in HTML</title>
 </head>
-<body bgcolor="blue">
+<body bgcolor="sky blue">
 	<form>
 	<h1 align="center">Form</h1>
 	<hr>
@@ -28,10 +28,13 @@
 	</select>
 
         <br> <br>
-        <input type="redio" name="Gender">male
-        <input type="redio" name="Gender">female
-        <input type="redio" name="Gender">other
+                
+        <input type="checkbox" name="Gender" required pattern="[1]" title="only select one">male
+        <input type="checkbox" name="Gender">female
+        <input type="checkbox" name="Gender">other
         <br> <br>
+
+
         Select Your Hobby:
         <input type="checkbox">music
         <input type="checkbox">cricket
