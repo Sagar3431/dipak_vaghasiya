@@ -1,0 +1,88 @@
+DBMS- Database Management System
+
+We can store and manage large amount data using DBMS.
+
+sql-- structured query language
+
+we can create,update,delete tables using sql queries
+
+DDL -- Data Definition Language-- create,alter,drop,truncate
+
+DML-- Data Manipulation Language-- insert,update,delete
+
+DQL-- Data Query Language-- select
+
+CREATE DATABASE 12dec_db
+
+create database database name
+
+col type (size)
+
+0 to 255
+
+
+CREATE TABLE candidates
+(
+    cand_id int(10),
+    c_name varchar(200),
+    c_address varchar(200)
+    
+    
+    
+)
+
+ALTER TABLE candidates ADD c_mobile varchar(200)
+
+
+ALTER TABLE candidates CHANGE cand_id c_id int(10)
+
+DROP TABLE candidates1
+
+
+
+INSERT INTO candidates(c_id,c_name,c_address,c_mobile) VALUES(1,"Manav","Rajkot",9429369656)
+
+
+INSERT INTO candidates(c_id,c_name,c_address,c_mobile) VALUES(2,"Sanjay","Ahmedabad",254664644);
+
+INSERT INTO candidates(c_id,c_name,c_address,c_mobile) VALUES(3,"Khushi","Baroda",255565545);
+
+INSERT INTO candidates(c_id,c_name,c_address,c_mobile) VALUES(4,"Avinash","Surat",25555485);
+
+INSERT INTO candidates(c_id,c_name,c_address,c_mobile) VALUES(5,"Jyot","Vapi",256554555)
+
+
+
+Task:- Create new database school and in that database create table student and enter the student id,
+name,subject,address,age
+
+Task:- create table employee and enter the employee id, employee age, employee department,employee salary
+
+
+Khushi,jyot,avinash,harshad,sanjay,arjun,dipak,moxit,raj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
