@@ -1,0 +1,41 @@
+DELIMITER $$
+CREATE PROCEDURE insertdata()
+BEGIN
+INSERT INTO candidates(c_id,c_name,c_address) VALUES(1,"dipak","somnath");
+END
+
+
+call procedur name();
+
+DELIMITER  $$
+CREATE PROCEDURE insertdiftdata (i int(20),j varchar(200),k varchar(200))
+BEGIN
+INSERT INTO candidates(c_id,c_name,c_address) VALUES(i,j,k);
+END
+
+
+
+CALL insertdiftdata(2,"sagar","diu");
+CALL insertdiftdata(3,"nayan","junagadh");
+CALL insertdiftdata(4,"madhav","ahemedabad");
+CALL insertdiftdata(5,"suresh","landon");
+
+
+CREATE TABLE studunt
+(
+s_id int(20),
+    s_name varchar(200),
+    s_subject varchar(200),
+    s_mark varchar(200)
+    
+)
+
+DELIMITER $$
+CREATE PROCEDURE studunt_info(i int(20),j varchar(200),k varchar(200),l varchar(200));
+BEGIN
+INSERT INTO studunt(s_id,s_name,s_subject,s_mark) VALUES(i,j,k,l);
+END
+
+CALL studunt_info(1,"sagar","maths","50");
+CALL studunt_info(2,"dipak","english","65");
+CALL studunt_info(3,"avinash","computor","70");

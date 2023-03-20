@@ -1,0 +1,8 @@
+creat databese trigger
+CREATE TABLE test
+(
+id int(10),
+    name varchar(200),
+    date_time timestamp,
+    action_parfomed varchar(200)
+)

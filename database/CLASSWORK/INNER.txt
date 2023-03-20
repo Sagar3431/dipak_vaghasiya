@@ -1,0 +1,34 @@
+INNER: 
+Employee
+1
+2
+3
+4
+
+Product
+2
+3
+
+SELECT pr.empId, emp.empName FROM product AS pr
+INNER JOIN employee AS emp ON pr.empId = emp.empId 
+
+OUTER
+LEFT
+Employee
+1
+2
+3
+4
+
+Product
+2
+3
+
+SELECT pr.empId, emp.empName FROM employee AS emp
+LEFT JOIN product AS pr ON emp.empId = pr.empId 
+
+RIGHT
+SELECT pr.empId, emp.empName FROM employee AS emp
+RIGHT JOIN product AS pr ON pr.empId = emp.empId
+
+JOIN
