@@ -1,0 +1,61 @@
+creat databese bank
+create table BRANCH (
+branch_name varchar(20) primary key,
+branch_city varchar(20),
+branch_id varchar(20)
+);
+INSERT INTO branch(branch_name,branch_city,branch_id) VALUES("naroda","ahmedabad","51"),("nikol","ahmedabad","52"),("dolasa","kodinar","53")
+
+
+create table LOAN (
+loan_number int primary key,
+branch_id varchar(20),
+account_holder_id varchar(20),
+loan_amount int,
+loan_type varchar(20),
+foreign key (branch_id) references branch(branch_name)
+);
+
+INSERT INTO loan(loan_number,account_holder_id,loan_amount,loan_type) VALUES(121,"A251","100000","gold"),(122,"A252","200000","car"),(123,"A253","300000","home")
+
+ CREATE TABLE account_holder
+(
+account_holder_id int(20),
+    account_no varchar(20),
+    account_holder_name varchar(200),
+    city varchar(20),
+    contact varchar(20),
+    date_of_account_created date,
+    account_status varchar(20),
+    account_type varchar(20),
+    balance varchar(20),
+      FOREIGN KEY(account_holder_id) REFERENCES loan(loan_number)
+
+)
+INSERT INTO `account_holder` (`account_holder_id`, `account_no`, `account_holder_name`, `city`, `contact`, `date_of_account_created`, `account_status`, `account_type`, `balance`) VALUES ('121', '21990000021', 'sagar vaghasiya', 'ahmedabad', '9913338702', '2015-03-02', 'open', 'saving', '200000'), ('122', '1290000021', 'dipak patel', 'ahmedabad', '8160293626', '2023-02-02', 'open', 'saving', '300000'), ('123', '1290000023', 'moxit shah', 'dolasa', '7874975239', '2019-03-01', 'close', 'carrant', '400000');
+
+
+Also fetch the details of the account holder who are related from the same
+city 
+ans:-
+SELECT account_holder.account_holder_name AS "sagar vaghasiya", branch.branch_name, branch.branch_city FROM account_holder,branch WHERE account_holder.account_holder_name=branch.branch_name;
+
+● Write a query to fetch account number and account holder name, whose
+accounts were created after 15th of any month
+ans:-SELECT  am.customer_number, firstname, account_number
+FROM customer_master cm INNER JOIN account_master am
+ON cm.customer_number=am.customer_number
+WHERE extract(day from account_opening_date)>15
+ORDER BY am.customer_number, account_number
+● Write a query to display the city name and count the branches in that city.
+Give the count of branches an alias name of Count_Branch.
+ans:-SELECT count(account_holder_id) account_Count FROM account_holder WHERE city='ahmedabad';
+
+● Write a query to display the account holder’s id, account holder’s name,
+branch id, and loan amount for people who have taken loans. (NOTE : use
+sql join concept to solve the query)
+ans:-
+SELECT account_holder.account_holder_id, account_holder.account_holder_name, branch.branch_id, branch.branch_name
+FROM account_holder
+INNER JOIN branch
+ON branch.branch_id = account_holder.account_holder_id
