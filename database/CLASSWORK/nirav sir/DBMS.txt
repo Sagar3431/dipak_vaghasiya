@@ -1,0 +1,134 @@
+DFD : Data Flow Diagram
+
+
+Amazon
+
+Admin
+
+==> login
+==> manage(add/delete/create) users
+==> manage cates
+==> manage subcates
+==> manage products
+==> view cart (t)
+==> view payment (t)
+==> view order (t)
+==> view feedback (t)
+==>  view inquiry(t)
+User
+
+==> Reister (t)
+==> login
+
+==> view cates (t)
+==> view subcates (t)
+==> view products (t)
+==> add to cart (t)
+==> payment (t)
+==> order (t)
+==> feedback (t)
+==> inquiry(t)
+
+DBMS 
+
+
+RDBMS :
+
+DBMS :
+
+datatypes:
+
+int
+char/varchar/text
+date
+time
+datetime
+timestamp
+
+
+
+SQL : Stucture Query Language
+
+DDL:Data Definition language
+
+==> create
+
+create database databseNAme;
+
+use Amazon;
+
+CREATE TABLE test123
+(
+	x int,
+    y varchar(20),
+    z datetime,
+    a timestamp
+
+)
+==> alter
+
+
+alter table tableName add colname type(size);
+
+alter table tableName CHANGE old-colname new-col type(size);
+
+ALTER TABLE category add  PRIMARY key (cate_id);
+
+
+==> drop
+
+drop table tablename (deletes the whole table along with its records)
+
+==> truncate
+
+truncate table tableName;(deletes  records not the table itself)
+
+DML: Data Manipulation language
+
+
+==> insert
+
+insert into tableName (col1,col2,...,colN) values ('val1','val2',..,'valN');
+==> update
+
+UPDATE TABLEnAME SET COLNAME ="VALUE"
+
+UPDATE TABLEnAME SET COLNAME ="VALUE" WHERE COLNAME = 'VALUE'
+
+==> delete
+
+DELETE FROM TABLEnAME  (SAME AS tRUNCATE)
+
+DELETE FROM TABLEnAME  WHERE COL = 'VAL';
+
+CONSTRAINTS:
+
+primary key
+==> to identify records/tuples uniquely 
+=> there must be only 1 primary key per table
+==> can not accept NULL values
+
+
+unique key
+
+==> to identify records/tuples uniquely 
+=> there can be more than 1 unique key per table
+foreigh key
+==> can accept NULL values
+
+
+Foreign Key:
+
+==> to create relations between tables
+==> it refers to the primary key of another table
+
+
+DQL: Data Query language
+DCL: Data Control language
+TCL: Transaction Contol language
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+
+create database meesho
+CREATE TABLE category
+(
+c_id int AUTO_INCREMENT NOT null,
+    c_name varchar(25)
+
+);
+INSERT INTO `category` (`c_id`, `c_name`) VALUES (NULL, 'men\'s'), (NULL, 'women\'s'), (NULL, 'kid\'s');
+
+CREATE TABLE subcategory
+(
+s_id int PRIMARY KEY AUTO_INCREMENT not null,
+    S_name varchar(25),
+    
+    c_id_fk int,
+    FOREIGN key (c_id_fk) REFERENCES category(c_id)
+
+)
+INSERT INTO `subcategory` (`s_id`, `S_name`, `c_id_fk`) VALUES (NULL, 'men\'s wear', '1'), (NULL, 'woman\'s wear', '2'), (NULL, 'kid\'s wear', '3');
+
+
+CREATE TABLE product
+(
+p_id  int PRIMARY KEY AUTO_INCREMENT NOT null,
+    P_name varchar(25),
+    P_price varchar(25),
+    
+    c_id_fk int,
+    s_id_fk int,
+    FOREIGN KEY (c_id_fk) REFERENCES category(c_id),
+    FOREIGN KEY (s_id_fk) REFERENCES subcategory(s_id)
+)
+
+INSERT INTO `product` (`p_id`, `P_name`, `P_price`, `c_id_fk`, `s_id_fk`) VALUES (NULL, 't-shirt\'s', '500', '1', '1'), (NULL, 'Dresses', '600', '2', '2'), (NULL, 'toy\'s', '800', '3', '3');
+
+
+SELECT category.c_name,subcategory.S_name,product.P_name FROM category JOIN subcategory ON category.c_id=subcategory.c_id_fk JOIN product ON subcategory.s_id=product.s_id_fk;
+
+
