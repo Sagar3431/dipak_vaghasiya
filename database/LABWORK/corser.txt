@@ -1,0 +1,3 @@
+CREATE PROCEDURE testcursor() BEGIN DECLARE test int DEFAULT 0; DECLARE s_rollno int; DECLARE s_name varchar(20); DECLARE s_subject varchar(20); DECLARE t CURSOR FOR SELECT * FROM studunt; DECLARE CONTINUE HANDLER FOR NOT found SET test=4; OPEN t; leb:loop FETCH t into s_rollno,s_name,s_subject; INSERT INTO backup VALUES(s_rollno,s_name,s_subject); if test=4 THEN LEAVE leb; end if; END LOOP; CLOSE t; END;
+
+

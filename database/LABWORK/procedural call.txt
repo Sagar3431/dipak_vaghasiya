@@ -1,0 +1,38 @@
+DELIMITER $$
+CREATE PROCEDURE sagar(i int,j varchar(20),k varchar(20),l varchar(20))
+BEGIN
+INSERT INTO studunt(s_id,s_rollno,s_name,s_marks) VALUES(i,j,k,l);
+
+END
+call procedural name ();
+
+
+CREATE PROCEDURE  testcursor()
+BEGIN
+DECLARE s_rollno int
+DECLARE s_name varchar(20)
+DECLARE s_subject varchar(20)
+
+DECLARE  t  CURSOR FOR SELECT * FROM studunt;
+OPEN t 
+leb:loop
+FETCH t into s_rollno,s_name,s_subject
+INSERT INTO backup VALUES(s_rollno,s_name,s_subject)
+CLOSE
+END
+
+
+CREATE PROCEDURE  testcursor()
+BEGIN
+DECLARE test DEFAULT 0;
+DECLARE s_rollno int
+DECLARE s_name varchar(20)
+DECLARE s_subject varchar(20)
+
+DECLARE  t  CURSOR FOR SELECT * FROM studunt;
+OPEN t 
+leb:loop
+FETCH t into s_rollno,s_name,s_subject
+INSERT INTO backup VALUES(s_rollno,s_name,s_subject)
+CLOSE
+END

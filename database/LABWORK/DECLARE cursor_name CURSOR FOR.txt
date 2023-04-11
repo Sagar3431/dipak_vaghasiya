@@ -1,0 +1,19 @@
+DECLARE cursor_name CURSOR FOR
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+OPEN cursor_name;
+
+FETCH NEXT FROM cursor_name INTO variable1, variable2, ...;
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    -- do something with the data
+    ...
+    
+    FETCH NEXT FROM cursor_name INTO variable1, variable2, ...;
+END
+
+CLOSE cursor_name;
+DEALLOCATE cursor_name;
