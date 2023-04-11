@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form in HTML</title>
+</head>
+<body style="background-color: green;" align="center">
+	<form>
+		<h1>Form</h1>
+		<hr>
+		<label for="name">Name:</label>
+		<input type="text" id="name" placeholder="Enter your name" required pattern="[a-zA-z]+" title="Alphabets only"><br><br>
+		<label for="mobile">Mobile:</label>
+		<input type="tel" id="mobile" placeholder="Enter your mobile" required pattern="[0-9]{10}" title="Only numbers and 10 digits"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" placeholder="Enter your email" required><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" placeholder="Enter your password" required><br><br>
+		<label for="date">Date:</label>
+		<input type="date" id="date"><br><br>
+		<label for="datetime">Date-time:</label>
+		<input type="datetime-local" id="datetime"><br><br>
+		<label for="color">Color:</label>
+		<input type="color" id="color"><br><br>
+		<label for="address">Address:</label>
+		<textarea id="address" cols="40" rows="4"></textarea><br><br>
+		<label for="subject">Subject:</label>
+		<select id="subject">
+			<option value="">Select subject</option>
+			<option value="Python">Python</option>
+			<option value="Java">Java</option>
+			<option value="HTML">HTML</option>
+			<option value="Android">Android</option>
+			<option value="PHP">PHP</option>
+		</select><br><br>
+		<label for="gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="male" required><label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+		<input type="radio" id="other" name="gender" value="other"><label for="other">Other</label><br><br>
+		<label for="hobbies">Hobbies:</label>
+		<input type="checkbox" id="music" name="hobbies" value="music"><label for="music">Music</label>
+		<input type="checkbox" id="cricket" name="hobbies" value="cricket"><label for="cricket">Cricket</label>
+		<input type="checkbox" id="football" name="hobbies" value="football"><label for="football">Football</label>
+		<input type="checkbox" id="dance" name="hobbies" value="dance"><label for="dance">Dance</label>
+		<input type="checkbox" id="reading" name="hobbies" value="reading"><label for="reading">Reading</label><br><br>
+		<label for="file">File:</label>
+		<input type="file" id="file"><br><br>
+		<input type="submit">
+		<input type="reset">
+    </form>
+</body>
