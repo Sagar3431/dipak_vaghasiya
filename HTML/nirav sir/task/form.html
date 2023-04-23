@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    *
+    {
+        text-align: center;
+        color: goldenrod;
+    }
+</style>
+<body bgcolor="blue">
+    <h1 align="center">FORM</h1>
+    <hr>
+    <form align="center">
+        Name: <input type="text" required pattern="[a-z,A-Z]{3,5}" title="only alphabyt"> <br><br>
+        Mobile: <input type="text" required pattern="[0-9]{10}" title="Enter 10 Digits"><br><br>
+        password: <input type="password"><br><br>
+        select your country:
+        <select>
+        <option>none</option>
+        <option>india</option>
+        <option>USA</option>
+        <option>UAE</option>
+        </select><br><br>
+        date: <input type="Date"><br><br>
+        Time-Date: <input type="datetime-local"><br><br>
+        range: <input type="range"><br><br>
+        color: <input type="color"><br><br>
+        Select Your Gender:
+        <input type="radio" name="gender">male 
+        <input type="radio" name="gender">female
+        <br><br>
+
+        select your hobby:
+        <input type="checkbox">music
+        <input type="checkbox">cricket
+        <input type="checkbox">football
+        <input type="checkbox">dance
+        <input type="checkbox">reading
+        <br> <br>
+         
+        <input type="file" maltiple><br><br>
+        <input type="submit">
+        <input type="reset">
+        
+
+          
+    </form>
+</body>
+</html>

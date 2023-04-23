@@ -4,16 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Form in HTML</title>
-	<style>
-		
-h1 span
-{
-opacity: 0;
-display: inline-block;
-animation: animate 1s linear forwards;
-}
-		
-	</style>
+	
 </head>
 <body style="background-color: green;" align="center">
 	<form>
@@ -22,7 +13,7 @@ animation: animate 1s linear forwards;
 		<label for="name">Name:</label>
 		<input type="text" id="name" placeholder="Enter your name" required pattern="[a-zA-z]+" title="Alphabets only"><br><br>
 		<label for="mobile">Mobile:</label>
-		<input type="tel" id="mobile" placeholder="Enter your mobile" required pattern="[0-9]{10}" title="Only numbers and 10 digits"><br><br>
+		<input type="tel" id="mobile" placeholder="Enter your mobile" required pattern="[0-9]{10}+" title="Only numbers and 10 digits"><br><br>
 		<label for="email">Email:</label>
 		<input type="email" id="email" placeholder="Enter your email" required><br><br>
 		<label for="password">Password:</label>
