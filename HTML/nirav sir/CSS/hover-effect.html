@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .x{
+        height: 80px;
+        width: 200px;
+        background: linear-gradient(red,pink,blue);
+        margin: 100px auto;
+        position: relative;
+        /* overflow: hidden;  */
+        z-index: 1;
+        line-height: 80px;
+        transition: 1s;
+
+    }
+    .y{
+        height: 80px;
+        width: 200px;
+        background: gray;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: -100%;
+        transition: 1s;
+        z-index: 0;
+    }
+    .y:hover
+    {
+        left: 0px;
+    }
+</style>
+<body>
+    <div class="x">
+        hover me
+        <div class="y">
+
+        </div>
+    </div>
+</body>
+</html>

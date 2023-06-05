@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            /* background: url('gift.png.png'); */
+            
+
+        }
+        img{
+            
+            height: 200px;
+            width: 200PX;
+            margin: -258px 50px;
+            z-index: 1;
+            position: relative;
+        }
+        .one, .two
+        {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transition: 1s;
+            text-align: center;
+           
+        }
+       
+        .one div, .two div{
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            /* transform: translate(-50%,-50%); */
+            
+        }
+        .one {
+            background: rgb(8, 8, 8);
+            /* opacity: .5; */
+            transform: scale(1);
+            
+            
+        }
+        .two{
+            background: greenyellow;
+            transform: scale(0);
+            z-index: 0;
+        }
+        /* .outer:hover .one{
+            transform: scale(0);
+        } */
+        .outer:hover .two{
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <img src="gift2.png.png" alt="" >
+        <div class="one"></div>
+        <div class="two"><div></div></div>
+    </div>
+    
+</body>
+</html>

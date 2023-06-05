@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 100px;
+    background: darkblue;
+    display: flex;
+   
+}
+
+.header .logo{
+    height: 100px;
+    width: 50%;
+    background: lightcoral;
+}
+.header .cname{
+    height: 100px;
+    width: 20%;
+    background: darkgoldenrod;
+}
+.nav 
+        {
+            background: coral;
+            text-align: center;
+            padding: 25px 0;
+            position: fixed; 
+             width: 100%;
+        }
+        ul 
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        li 
+        {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        a 
+        {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+        }
+
+        li::after 
+        {
+            content: "";
+
+            height: 5px;
+            width: 0px;
+            background: #000;
+
+            position: absolute;
+            top:100%;
+            left:0;
+            transition: 1s;
+        }
+
+        li:hover::after 
+        {
+            width: 100%;
+        }
+        .slider{
+            height: 500px;
+            background: darkmagenta;
+        }
+
+        .content{
+            height: 500px;
+            background: grey;
+            display: flex;
+        }
+        .content .p1
+            {
+    height: 500px;
+    width: 25%;
+    background: darkcyan;
+    border: 2px solid;
+    
+             }
+             
+           
+             .content .p1 .section{
+                
+                height: 100px;
+                background: red;
+                border: 1px solid;
+             }
+
+           
+            
+             .footer{
+                height: 400px;
+                background: rgb(227, 194, 243);
+             }
+             #myBtn {
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+                
+              }
+              
+              #myBtn:hover {
+                background-color: #555;
+                
+                
+              }
+    
+            
+             
+
+        

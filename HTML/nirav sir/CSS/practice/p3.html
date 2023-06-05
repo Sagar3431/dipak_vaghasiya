@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 300px;
+            width: 500px;
+            background: gray;
+            margin: 100px auto;
+            
+            
+           
+        }
+        .b{
+            height: 300px;
+            width: 500px;
+            background: rgb(19, 19, 19);
+            margin: -705px 0 0 827px; 
+            opacity: 0;
+            transition: .35s;
+            
+           
+        }
+        .c{
+            height: 300px;
+            width: 500px;
+            /* background: rgb(19, 19, 19); */
+            background: black;
+            margin: 299px 0 0 -181px;
+            opacity: 0; 
+            transition: .35s;
+            
+
+        }
+        .b:hover{
+          opacity: 1;
+          transform: scale(2);
+          transform-origin: 100% 0 0;
+        }
+         .c:hover{
+          opacity: 1;
+          
+          transform: scale(2);
+          transform-origin: 0 100% 0;
+          
+        } 
+       
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+
+</body>
+</html>

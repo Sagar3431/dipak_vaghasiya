@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+         *, *:after, *:before {
+            
+  box-sizing: border-box;
+}
+body {
+  background: url(tree-736885_1280.jpg);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+
+}
+.card {
+  display: inline-block;
+  margin: 30px;
+  background: #03cff3; 
+  padding: 15px;
+  min-width: 200px;
+  box-shadow: 0 3px 5px #ddd;
+  color: #555;
+}
+.card .box {
+  width: 150px;
+  height: 100px;
+  margin: auto;
+  background: #03cff3;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc inset;
+  z-index: 0;
+}
+.card .box .fill {
+  width: 150px;
+  height: 100px;
+  position: relative;
+  /* background: #03A9F4; */
+  border: 8px solid rgb(11, 204, 234);
+  opacity: .5;
+  box-shadow: 0 0 5px #ccc;
+  transition: 0.22s;
+  z-index: -1;
+}
+.scale:hover .fill {
+  transform: scale(2);
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    
+    <div class="card">
+        
+        <div class="box scale"> 
+
+            
+            <div class="fill">
+                
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

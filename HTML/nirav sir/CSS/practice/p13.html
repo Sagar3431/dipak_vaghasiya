@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+        
+        a 
+        {
+            height: 100px;
+            width: 100px;
+            /* background: gray; */
+            display: block;
+            position: relative;
+            margin: 100px auto;
+            transition: 1s;
+            transform-style: preserve-3d;
+            text-align: center;
+            line-height: 80px;
+            backface-visibility: hidden;
+           }
+        .front
+        {
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(red,yellow,green);
+            border-radius: 10px;
+            position: absolute;
+            top:0;
+            left:0;
+            backface-visibility: hidden;
+
+            transform: rotatey(0deg) translatez(50px);
+        }
+        .back
+        {
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(blue,darkred,orange);
+            border-radius: 10px;
+            position: absolute;
+            top:0;
+            left:0;
+            backface-visibility: hidden;
+            
+            transform: rotatey(90deg) translatez(50px);
+        }
+        .x
+        {
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(pink,brown,lightcoral);
+            border-radius: 10px;
+            position: absolute;
+            top:0;
+            left:0;
+            backface-visibility: hidden;
+            
+            transform: rotatey(180deg) translatez(50px);
+        }
+        .y
+        {
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(rgb(171, 133, 240),rgb(192, 26, 229),rgb(59, 237, 184));
+            border-radius: 10px;
+            position: absolute;
+            top:0;
+            left:0;
+            backface-visibility: hidden;
+            
+            transform: rotatey(270deg) translatez(50px);
+        }
+       
+
+       
+
+        a:hover 
+        {
+           
+            /*transform: rotateX(-90deg) translateZ(50px);
+            transform: rotateX(-180deg) translateZ(50px);*/
+            transform: rotatey(-360deg) translatez(0px);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="facebook.com">
+
+        <div class="front">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <div class="back">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <div class="x">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <div class="y">
+            <i class="fa fa-facebook"></i>
+        </div>
+        
+    </a>
+    
+</body>
+</html>

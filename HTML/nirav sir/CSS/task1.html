@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+      
+    
+       
+       table{
+        margin-top: 80px;
+        background: grey
+         
+       }
+      
+        input
+        {
+            border: none;
+            box-shadow: 0 0 10px #3113df inset;
+        }
+        input:focus
+        {
+            box-shadow: 0 0 0px red inset;
+            outline: none;
+            border-bottom: 2px solid rgb(152, 150, 150);
+            border-radius: 0px;
+            color:blue;
+        }
+        textarea{
+        border: none;
+        box-shadow: 0 0 10px blue;
+    }
+    textarea:hover{
+        border: none;
+        box-shadow: 0 0 0px red;
+        outline: none;
+        border-bottom: 0.5px solid blue;
+        color: red;
+
+    }
+    p{
+        margin: -25px 0 0 0;
+    }
+        
+
+    </style>
+</head>
+<body>
+    <div>
+    <table align="center">
+        <form>
+            
+            <tr>
+                <td><h1>Contact Form</h1></td><br>
+                
+            </tr>
+            <tr>
+                <td colspan="4"><p>Please fill your infomation and we'll be sending your order in no time</p></td>
+            </tr>
+        <tr>
+            <td>Your Name :</td>
+            <td><input type="name" placeholder="First Name"></td>
+            <td colspan="2" ><input type="name" placeholder="Last Name"></td>
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td  colspan="3"><input type="email" placeholder="Enter Your Email"></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Subject</td>
+            <td>
+            <select>
+                <option>WD</option>
+                <option>java</option>
+                <option>paython</option>
+                <option>react js</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>Message</td>
+            <td colspan="3"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+        <td colspan="4"><input type="submit" value="submit from"></td>
+    </tr>
+</form>
+    </table>
+</div>
+
+    
+</body>
+</html>

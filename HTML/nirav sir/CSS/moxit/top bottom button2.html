@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Button</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 9999;
+}
+
+.scroll-button:hover {
+  opacity: 1;
+}
+
+.scroll-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(50deg);
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+}
+
+  </style>
+</head>
+<body>
+  <a href="#top" class="scroll-button"></a>
+
+  <!-- Add an element with an id "top" at the top of your page -->
+  <div id="top">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus libero odio corrupti ratione eligendi numquam tempore repellendus! Totam, est eum pariatur ipsa amet repudiandae non! Consectetur cumque veniam dolorem.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus libero odio corrupti ratione eligendi numquam tempore repellendus! Totam, est eum pariatur ipsa amet repudiandae non! Consectetur cumque veniam dolorem.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus libero odio corrupti ratione eligendi numquam tempore repellendus! Totam, est eum pariatur ipsa amet repudiandae non! Consectetur cumque veniam dolorem.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus libero odio corrupti ratione eligendi numquam tempore repellendus! Totam, est eum pariatur ipsa amet repudiandae non! Consectetur cumque veniam dolorem.
+    </p>
+
+  </div>
+
+  <!-- Rest of your page content -->
+
+</body>
+</html>

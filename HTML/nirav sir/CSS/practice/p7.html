@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card 
+        {
+            /* height: 350px; */
+            width: 200px;
+            background: gray;
+            border: 2px solid;
+            margin: 100px auto;
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+        }
+        .prdimg{
+            height:250px;
+            width:200px;
+            /* background:cyan; */
+
+        }
+        .front,.back{
+            height:200px;
+            width:200px;
+            position:absolute;
+            top:0;
+            left:0;
+            transition:1s;
+            backface-visibility:hidden;
+        }
+        .front{
+            transform:rotateY(180deg);
+        }
+        .back{
+            transform:rotateY(0deg);
+        }
+        .main:hover .back{
+            transform: rotateY(180deg);
+        }
+        .main:hover .front{
+            transform:rotateY(0deg);
+        }
+        .prd-view
+        {
+            /* height: 50px; */
+            width: 200px;
+            background: lightcoral;
+            position: absolute;
+            top:0;
+            left:0;
+
+            transition: 5s;
+            /* display: none; */
+            opacity: 0;
+
+          
+            text-transform: uppercase;
+
+        }
+        .prd-info
+        {
+            /* height: 100px; */
+            width: 200px;
+            background: cornflowerblue;
+            position: relative;
+        }
+        p 
+        {margin: 0;
+        word-spacing: 8px;
+        }
+
+        .card:hover .prd-view 
+        {
+            top:200px;
+            /* display: block; */
+            opacity: 1;
+        }
+         
+       button{
+        border: none;
+       position: relative;
+       top: 0;
+       left: 0;
+       margin: 14px;
+       height: 50px;
+       width: 150px;
+       background: lightblue;
+       outline: 4px solid lightblue;
+       transition: .41s;
+       }
+       button:hover{
+        outline: 4px solid lightblue;
+        outline-offset: 8px;
+
+       }
+       span{
+        position: absolute;
+        top: 0;
+        left: 78%;
+        width: 45px;
+            height: 45px;
+            
+        margin:  0 0;
+        background: red;
+        }
+       
+      
+    </style>
+</head>
+<body>
+   
+
+    <div class="card">
+        <!-- <span>NEW</span> -->
+        <div class="prdimg">
+            <div class="front"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%"></div>
+            <div class="back"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%"></div>
+        </div>
+        
+        <div class="prd-view">
+            Quick View
+        </div>
+
+        <div class="prd-info">
+            <p>Formal Blue Shirt</p>
+            <p>$45.99 <del style="color: lightgrey;">$69.71</del></p>            <button>ADD TO CART</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>

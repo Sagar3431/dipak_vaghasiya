@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .nav{
+        background: coral;
+        text-align: center;
+        line-height: 50px;
+       }
+       li{
+        display: inline;
+        margin: 30px;
+        position: relative;
+       }
+       a{
+        text-decoration: none;
+        color: #fff;
+        background: linear-gradient(lightblue,rgb(18, 18, 242));
+        font-size: 20px;
+       }
+       .line{
+        height: 5px;
+        width: 0;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: 1s;
+       }
+       li:hover .line
+       {
+        width: 100%;
+       }
+    </style>
+</head>
+<body>
+    <div class="nav">
+          <ul>
+            <li>
+                <a href="">home</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">about</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">sarvice</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">contact</a>
+                <div class="line"></div>
+            </li>
+          </ul>
+    </div>
+</body>
+</html>

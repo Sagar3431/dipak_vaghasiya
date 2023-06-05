@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav
+        {
+          height: 80px;
+          background: black;
+        text-align: center;
+        line-height: 80px;
+        
+        }
+        li{
+           display: inline;
+           margin-right: 20px;
+           position: relative;
+           border: 2px solid red;
+           
+
+          }
+          a{
+            text-decoration: none;
+            color: #fff;
+          }
+          .line
+          {
+            height: 5px;
+            width: 0;
+            background: red;
+            position: absolute;
+            top: 100%;
+            left:0; 
+           transition: 1s;
+
+        }
+        li:hover .line
+        {
+            width: 100%;
+        }
+        
+       
+        li .woman
+        {
+            position: relative;
+            top: 0;
+            left: 0;
+            
+            
+            
+           
+        }
+        li .wear a
+        {
+            color: #000;
+            
+           
+        }
+        .woman .wear 
+        {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: flex;
+           min-width: 50%;
+           text-align: left;
+           padding: 5px 0px;
+           margin: 2px 0 0;
+           font-size: 20px;
+            opacity: 0;
+            background: red;
+            color: #000;
+            list-style: none;
+            transition: 1s;
+           
+        }
+        .woman:hover .wear
+        {
+            opacity: 1;
+           
+        }
+       /* .woman .wear .line
+        {
+            height: 5px;
+            width: 0;
+            background: black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: 3s;
+        }
+        .wear:hover li .line
+        {
+            width: 100%;
+        }*/
+        .woman .wear img
+        {
+            height: 250px;
+            width: 350px;
+            padding-bottom: 30px;
+            margin: 200px 40px;
+        }
+        .woman .wear .x
+        {
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="">home</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">about</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">men's wear</a>
+                <div class="line"></div>
+            </li>
+            <li class="woman">
+                <a href="">woman's wear</a>
+                <div class="line"></div>
+                <ul class="wear">
+                    <div class="x">
+                    <li>
+                        <a href="">Clothing</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Wallets</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Footwear</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Watches</a>
+                        <div class="line"></div>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="">Accessories</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Bags</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Caps & Hats</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                    </div>
+                    <div class="x">
+                        <a href="">Jewellery</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Sunglasses</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Perfumes</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Beauty</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Shirts</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Sunglasses</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="">Swimwear</a>
+                        <div class="line"></div>
+                    </li>
+                </div>
+                <div class="x">
+                    <li><img src="freestocks-_3Q3tsJ01nc-unsplash.jpg" alt=""></li>
+                </div>
+                </ul>
+            
+            </li>
+        
+            <li>
+                <a href="">Short codes</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">contacts</a>
+                <div class="line"></div>
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>

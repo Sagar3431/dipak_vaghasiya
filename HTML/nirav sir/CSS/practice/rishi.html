@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            /* height:350px; */
+            width:200px;
+            /* background:black; */
+            margin:100px auto;
+            position:relative;
+            text-align:center;
+            line-height:50px;
+            position:relative;
+            border:2px solid;
+        }
+        .prdimg{
+            height:250px;
+            width:200px;
+            /* background:cyan; */
+
+        }
+        .front,.back{
+            height:200px;
+            width:200px;
+            position:absolute;
+            top:0;
+            left:0;
+            transition:1s;
+            backface-visibility:hidden;
+        }
+        .front{
+            transform:rotateY(180deg);
+        }
+        .back{
+            transform:rotateY(0deg);
+        }
+        .main:hover .back{
+            transform: rotateY(180deg);
+        }
+        .main:hover .front{
+            transform:rotateY(0deg);
+        }
+        .prdview{
+            /* height:50px; */
+            width:200px;
+            background:coral;
+            position:absolute;
+            top:0;
+            left:0;
+            transition:1s;
+            text-transform:uppercase;
+            opacity:0;
+        }
+        .main:hover .prdview{
+            top:200px;
+            opacity:1;
+        }
+        .prdinfo{
+            /* height:100px; */
+            width:200px;
+            background:lightblue;
+        }
+        p{
+            margin:0;
+        }
+        .a{
+            color:white;
+            background:lightseagreen;
+            width:150px;
+            height:20px;
+            border:none;
+            outline:2px solid lightseagreen;
+            transition:1s;
+        }
+        .a:hover{
+            outline:5px solid lightseagreen;
+            outline-offset: 5px;
+            
+        }
+        .b{
+            width:40px;
+            height:20px;
+            color:white;
+            font-size:16px;
+            background:rgba(255, 0, 0, 0.66);
+            /* padding: 0 0 0 0; */
+            position:absolute;
+            top:0;
+            left:80%;
+            
+        }
+        p{
+            margin: -15px 0 0 0;
+        }
+       
+     .new{
+        position: absolute;
+        top: 0%;
+        left: 0%;   
+        height: 30px; 
+        width: 50px;
+     }
+     
+       
+
+    </style>
+</head>
+<body>
+    <span class="new" style="background: blue;color:white">NEW</span>
+    <div class="main">
+        <div class="prdimg">
+            <div class="front"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%"></div>
+            <div class="back"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%"></div>
+        </div>
+        <div class="prdview">Quick View</div>
+        <div class="prdinfo">
+            <p><span style="color:red;">Formal blue shirt</span></p>
+            <p>$45.99 &nbsp; &nbsp; <span style="text-decoration: line-through;color:grey;">$69.71</span></p>            <button class="a">ADD TO CART</button>
+        </div>
+        
+    </div>
+</body>
+</html>

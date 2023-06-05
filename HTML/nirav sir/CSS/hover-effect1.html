@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a{
+        height: 100px;
+        width: 100px;
+        background: black;
+        margin: 100PX auto;
+        line-height: 100px;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        font-weight: bold;
+
+    }
+    .b
+    {
+        height: 20px;
+        width: 100px;
+        background: rgb(54, 196, 236);
+        position: absolute;
+        top:68%;
+        left:-100%;
+        transition: 1s;
+    }
+    .a:hover .b{
+        left: 0%;
+    }
+</style>
+<body>
+    <div class="a">
+        HOME
+        <div class="b"></div>
+    </div>
+</body>
+</html>

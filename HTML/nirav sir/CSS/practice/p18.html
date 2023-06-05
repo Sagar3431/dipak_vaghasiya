@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .nav
+        {
+            /*height: 50px;*/
+            width: 100%;
+            background: coral;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20PX;
+            
+
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        a
+        {
+            background: red;
+            text-decoration: none;
+            color: #fff;
+         
+        }
+        li
+        {
+            display: inline;
+            position: relative;
+        }
+        li::after
+        {
+            content: "";
+            height: 5px;
+            width: 0%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #000;
+            transition: 1s
+        }
+        li:hover::after
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Men's wear</a></li>
+            <li><a href="">Woman's wear</a></li>
+            <li><a href="">Short Codes</a></li>
+            <li><a href="">contact</a></li>
+
+        </ul>
+    </div>
+</body>
+</html>
