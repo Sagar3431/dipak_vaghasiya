@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a=100;
+        b=55;
+        c=33;
+        var max;
+        max = (a>b) ? (a>c ? a:c)  :(b>c ? b:c) ;
+        document.write("number is "+ "<br>" + a + "<br>" + b + "<br>" + c + "<br>" +"result:" + max +"<br>");
+           
+        max= (a>b&&a>c) ? (a>c ? a:c) : (b>c ? b:c);
+        document.write("number is "+ "<br>"  + a + "<br>" + b + "<br>" + c + "<br>" +"result:" + max );
+              
+    </script>
+    <!-- max = (n1 > n2 && n1 > n3 && n1 > n4)
+    ? n1 : ((n2 > n3 && n2 > n4)
+    ? n2 : (n3 > n4 ? n3 : n4));
+
+    // Print the largest number
+    document.write("Largest number among " + n1
+    + ", " + n2 + ", " + n3 + " and "
+    + n4 + " is " + max + ". "); -->
+</body>
+</html>

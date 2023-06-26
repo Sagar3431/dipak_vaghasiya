@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a">sagar</h1>
+    <button  onclick="ab()">add</button>
+    <button  onclick="abc()" >remove</button>
+    <button onclick="abcd()">addremove</button>
+
+    <script>
+        h1_tag = document.getElementById('a');
+        function sagar()
+        {
+            h1_tag.style.color = 'red';
+        
+        }
+        function ab()
+        {
+            h1_tag.innerHTML='dipak';
+            h1_tag.style.color='pink';
+        }
+        function abc()
+        {
+            h1_tag.innerHTML='sagar';
+            h1_tag.style.color='blue';
+        }
+        function abcd()
+        {
+            if(h1_tag.style.color == "red")
+        {
+            h1_tag.style.color ="";
+            h1_tag.innerHTML = "love";
+        }
+        else
+        {
+            h1_tag.style.color ="red";
+            h1_tag.innerHTML = "love u";
+            
+        }
+        }
+        
+       
+
+
+    </script>
+</body>
+</html>

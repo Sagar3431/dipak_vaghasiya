@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x
+        {
+            border:2px solid rgb(248, 36, 8);
+        }
+        .y
+        {
+            border: 2px solid green;
+        }
+        form
+        {
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validate()">
+        name: <input type="text" id="nm"> <span id="nm1"></span><br>
+        email: <input type="text" id="em"> <span id="em1"></span><br>
+        mobile: <input type="text" id="mo"> <span id="mo1"></span><br>
+        Password: <input type="text" id="pass">  <span id="pass1"></span><br>
+        cpassword: <input type="text" id="cpass"><br> <span id="cpass1"></span>
+        <input type="submit">
+    </form>
+    <script>
+         name1=document.getElementById("nm");
+         nmspan=document.getElementById("nm1");
+         email1=document.getElementById("em");
+         emspan=document.getElementById("em1");
+         mobile1=document.getElementById("mo");
+         mospan=document.getElementById("mo1");
+         pass=document.getElementById("pass");
+         pspan=document.getElementById("pass1");
+         cpass=document.getElementById("cpass");
+         cpspan=document.getElementById("cpass1");
+
+         nm_exp=/^[a-zA-Z]{2,5}$/;
+         em_exp=/^[\w.-]+@tops-int\.com$/;
+         mo_exp=/^\d{10}$/;
+         function validate()
+         {
+            if(name1.value=="")
+            {
+               nmspan.innerHTML="* name is requide..";
+               nmspan.style.color='red';
+              name1.classList.add("x");
+               return false;
+             
+            }
+           
+           if(!nm_exp.test(name1.value))
+            {
+                alert("min 2 and max 5 only alphabets...!");
+                return false;
+            }
+            else
+            {
+                nmspan.innerHTML="<br>* ok done";
+                nmspan.style.color="green";
+                name1.classList.add("y");
+            }
+         
+            
+            if(email1.value=="")
+            {
+                emspan.innerHTML="@tops-int.com requide...!";
+                emspan.style.color="red";
+                email1.classList.add("x");
+                return false;
+            }
+          if(!em_exp.test(email1.value))
+            {
+                alert("name number after this sytax requide..@tops-int.com requide...!");
+                return false;
+            }
+            else
+            {
+                emspan.innerHTML="<br> *strog";
+                emspan.style.color="green";
+                email1.classList.add("y");
+                
+
+            }
+            if(mobile1.value=="")
+            {
+                mospan.innerHTML="only 10 digit number accept";
+                mospan.style.color="red";
+                mobile1.classList.add("x");
+                return false;
+            }
+            if(!mo_exp.test(mobile1.value))
+            {
+                alert("ten digit requide for mobile ...!");
+                return false;
+            }
+            else
+            {
+                mospan.innerHTML="<br> *ok done";
+                mospan.style.color="green";
+                mobile1.classList.add("y");
+                
+                
+
+            }
+            if(pass.value=='')
+            {
+                pspan.innerHTML="Password is required..!";
+                pspan.style.color="red";
+                pass.classList.add("x");
+                return false;
+            }
+            else
+            {
+                pass.classList.add("y");
+            }
+          
+
+            if(pass.value != cpass.value)
+            {
+                cpass.classList.add("x");
+                alert("Passwords do not match..!");
+                return false;
+            }
+            else
+            {
+                pspan.innerHTML="<br> ok done";
+                pspan.style.color="green";
+                cpspan.innerHTML="<br>password match...!";
+                cpspan.style.color="green";
+                cpass.classList.add("y");
+                
+                return false;
+
+            }
+
+            
+            
+           
+         }
+         
+
+         //nirav.patel@tops-int.com
+    </script>
+</body>
+</html>

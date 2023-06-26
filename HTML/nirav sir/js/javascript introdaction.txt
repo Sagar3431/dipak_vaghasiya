@@ -1,0 +1,69 @@
+// to display CONTENT IN BODY/DOCUMENT/WINDOW
+        
+  document.write("hello JS 123 <u><b>^&%</b></u>");
+  // to display CONTENT in A CONSOLE 
+              console.log('hello JS 123 <u><b>^&%</b></u>');
+  
+              // to display CONTENT in ANY TAG 
+  
+              // document.getElementById('t');
+  
+              console.log(document.getElementById('t'));
+  
+              document.getElementById('t').innerHTML = "this is <u>H1</u> through JS";
+  
+           document.getElementById('t').innerText = "this is <u>H1</u> through JS innerTEXT";
+
+
+
+Javascript:
+
+    ==> used to change the behaviour of a website
+    ==> Dynamic Changes
+    ==> object oriented 
+    DOM ==> Document Object Model 
+
+    class test 
+    {
+        int a;
+        int t()
+        {
+            ..code
+        }
+    }
+
+    test xyz;
+    xyz.a 
+    xyz.t()
+document.write()
+
+    varname.method()
+    
+        x = h1_tag/img_tag 
+        x.id
+
+        x.alt
+        x.innerHTML 
+    
+        Types:
+        1. internal JS 
+        2. external JS (.js)
+    
+    
+    -->
+
+        <h1 id="t"></h1>
+        
+    
+    <script src="anyname.js"></script>
+
+<script>
+
+        window.alert('This is alert..!');
+        confirm("are you sure?");
+        window.prompt("5+5?= ");
+
+        print();
+
+
+    </script>
