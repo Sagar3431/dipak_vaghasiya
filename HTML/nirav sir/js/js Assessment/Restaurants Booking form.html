@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        h1
+        {
+            text-align: center;
+            color: #fff;
+            font-size: 50px;
+        }
+       .billing
+       {
+        background: linear-gradient(red,yellow,coral,blue);
+        width: 50%;
+        padding: 50px 50px;
+        margin: 50px auto;
+       
+       
+       }
+       input
+       {
+        background: #ffff;
+        width: 40%;
+        font-weight: 600;
+       border: none;
+       outline: none;
+       height: 30px;
+        
+       }
+       label
+       {
+        font-size: 30px;
+        font-weight: 500;
+       }
+       select
+       {
+        background: yellow;
+        font-weight: 600;
+        height: 40px;
+       }
+       option
+       {
+        background: green;
+        font-weight: 600;
+        
+       }
+       #submit
+       {
+        background: transparent;
+        font-size: 10px;
+        width: 150px;
+        height: 50px;
+        font-size: 30px;
+        border: 2px solid;
+        border-radius: 50px;
+        color: #fff;
+        
+       
+        
+       }
+       #submit:hover
+       {
+        background: linear-gradient(blue,white,coral,lightblue);
+        color:  #000;
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="billing">
+        <h1>Restaurant Booking Form</h1>
+    <form id="bookingForm">
+        <label for="bookingchoice">Choice of booking:</label>
+        <select  id="bookingchoice" onchange="sagar()" required>
+            <option value="" disabled selected>Select booking type</option>
+            <option value="fullDay">Full Day Booking</option>
+            <option value="halfDay">Half Day Booking</option>
+            <option value="hourly">Hourly Day Booking</option>
+        </select>
+        <br><br>
+        <label for="name">User name:</label>
+        <input type="text" id="name" required>
+        <br><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <br><br>
+        <label for="guests">Number of Persons:</label>
+        <input type="number" id="guests" min="1" required>
+        <br><br>
+        <div id="dateSection">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+        </div>
+        <br><br>
+        <div id="timeSection">
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+        </div>
+        <br><br>
+        <div id="slotSection">
+            <label for="slot">Time Slot:</label>
+            <select id="slot" required>
+              <option value="" disabled selected>Select time slot</option>
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+            </select>
+            
+        </div>
+        <br><br>
+        <input type="submit" value="Submit" id="submit">
+        <input type="reset" id="submit" onclick="a()">
+        
+
+    </form>
+
+    <div id="bookingConfirmation"></div>
+   
+    </div>
+
+    <script>
+        
+         function sagar()
+         {
+            choice = document.getElementById("bookingchoice").value;
+            dateSection = document.getElementById("dateSection");
+            slotSection = document.getElementById("slotSection");
+            timeSection = document.getElementById("timeSection");
+
+            dateSection.style.display="none";
+            slotSection.style.display="none";
+            timeSection.style.display="none";
+
+            if(choice === "fullDay")
+            {
+                dateSection.style.display="block";
+            }
+            else if(choice === "halfDay")
+            {
+                dateSection.style.display="block";
+                slotSection.style.display="block";
+            }
+            else if(choice === "hourly")
+            {
+                dateSection.style.display="block";
+                timeSection.style.display="block";
+            }
+            else
+            {
+              document.write("invalide option")
+            }
+
+         }
+
+
+
+         
+       
+        
+
+        
+
+        
+       
+         
+         
+    </script>
+</body>
+</html>
