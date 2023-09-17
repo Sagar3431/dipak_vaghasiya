@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide, Show, and Alert Example</title>
+    <style>
+      /* styles.css */
+.hidden
+{
+  display: none;
+}
+
+    </style>
+</head>
+<body>
+    <button id="toggleButton">Toggle</button>
+    <div id="alertDiv" class="hidden">
+        <p>This is a hidden div.</p>
+    </div>
+
+    <script>
+ // script.js
+$(document).ready(function() {
+  const toggleButton = $('#toggleButton');
+  const alertDiv = $('#alertDiv');
+
+  toggleButton.click(function() {
+      if (alertDiv.hasClass('hidden')) {
+          alertDiv.removeClass('hidden');
+          alert('The div is now visible!');
+      } else {
+          alertDiv.addClass('hidden');
+          alert('The div is now hidden!');
+      }
+  });
+});
+
+
+    </script>
+</body>
+</html>

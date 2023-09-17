@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class FamilyMember {
+            constructor(name, percentage) {
+              this.name = name;
+              this.percentage = percentage;
+            }
+          
+            // Method to calculate the difference with another family member's percentage
+            subtractPercentage(otherMember) {
+              return this.percentage - otherMember.percentage;
+            }
+          }
+          
+          // Create family member instances
+          const father = new FamilyMember("Father", 100);
+          const mother = new FamilyMember("Mother", 100);
+          const son = new FamilyMember("Son", 30);
+          const daughter = new FamilyMember("Daughter", 70);
+          
+          // Calculate the percentage difference between son and daughter
+          const difference = son.subtractPercentage(daughter);
+          
+          console.log(`Son's percentage: ${son.percentage}%`);
+          console.log(`Daughter's percentage: ${daughter.percentage}%`);
+          console.log(`Difference between Son and Daughter: ${difference}%`);
+          
+    </script>
+</body>
+</html>

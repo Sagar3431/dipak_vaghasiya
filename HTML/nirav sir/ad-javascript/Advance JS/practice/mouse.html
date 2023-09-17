@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Circle</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            cursor: none; /* Hide the default cursor */
+        }
+        
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: coral;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none; /* Allows the cursor to interact with elements beneath */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <script>
+        const circle = document.querySelector('.circle');
+
+document.addEventListener('mousemove', (e) => {
+    // Get the cursor's position
+    const x = e.clientX;
+    const y = e.clientY;
+
+    // Set the circle's position to the cursor's position
+    circle.style.left = x + 'px';
+    circle.style.top = y + 'px';
+});
+
+    </script>
+</body>
+</html>

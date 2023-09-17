@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const elements = ["react", "react", "react", "php", "php", "html"];
+
+// Create an empty object to store the counts
+const elementCounts = {};
+
+// Count the occurrences of each element
+elements.forEach((element) => {
+  if (elementCounts[element]) {
+    elementCounts[element]++;
+  } else {
+    elementCounts[element] = 1;
+  }
+});
+
+// Create the output string
+const output = Object.entries(elementCounts)
+  .map(([element, count]) => `${element}:${count}`)
+  .join(',');
+
+console.log(output);
+
+    </script>
+</body>
+</html>

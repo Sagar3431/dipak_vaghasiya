@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px solid black" align="center">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>mobile</th>
+           </tr>
+        
+        </thead>
+        <tbody id="table-body">
+           
+           
+        </tbody>
+
+
+        <script>
+            const th=document.getElementsByTagName("th");
+            body=document.getElementById("table-body");
+            const data = [
+                {name:"Rohit",id:1,mobile:"9913338702"},
+                {name:"Jay",id:2,mobile:"9913338702"},
+                {name:"Jayesh",id:3,mobile:"9913338702"},
+                {name:"Dipak",id:4,mobile:"9913338702"}
+                
+            ]
+
+            const d =data.map(v=>{
+                 const row=document.createElement("tr");
+                  
+                 const id=document.createElement("th");
+                 id.textContent=v.id;
+                 id.style.color="red";
+                 id.style.background="orange";
+                 id.style.fontSize="40px";
+                   
+                 const name=document.createElement("th");
+                 name.textContent=v.name;
+                 name.style.color="green";
+                 name.style.background="pink";
+                 name.style.fontSize="40px";
+                 
+                 const mobile=document.createElement("th");
+                 mobile.textContent=v.mobile;
+                 mobile.style.color="coral";
+                 mobile.style.fontWeight="100";
+                 mobile.style.background="black";
+                 mobile.style.fontSize="40px";
+
+
+                 row.appendChild(id);
+                 row.appendChild(name);
+                 row.appendChild(mobile);
+
+                 return row;
+
+            });
+
+            d.forEach(row=>{
+                body.appendChild(row);
+            })
+        </script>
+      
+    
+    </table>
+</body>
+</html>
