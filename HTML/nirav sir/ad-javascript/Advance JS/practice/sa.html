@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="h1"></div>
+    <script>
+        const details = [
+            {name:"Rohit",id:1},
+            {name:"Jay",id:2},
+            {name:"Jayesh",id:3}
+        ]
+        var heading = `<h1>registration</h1> <table border="2px">`
+            
+
+        for(x of details){
+            heading +=`
+            <tr>
+            <td>
+            ${x.id} 
+            </td>
+            
+            <td>
+            ${x.name}
+            </td>
+        </tr>
+            `
+        }
+        heading = heading + `</tr></table>`
+        document.querySelector('.h1').innerHTML=heading;
+        
+    </script>
+</body>
+</html>

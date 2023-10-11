@@ -13,7 +13,7 @@
         }
         const promiseme = new Promise(function(response,error)
         {
-            if(1==1)
+            if(true==1)
             {
                 return(response("connected"))
             }
@@ -28,6 +28,8 @@
         promiseme.then(
             function(res){display(res)},
             function(err){display(err)}
+            //function(res){console.log(res)},
+            //function(err){console.log(err)}
 
         )
     </script>

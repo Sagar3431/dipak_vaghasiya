@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            function dipak(final)
+            {
+                console.log(final)
+            }
+            const sagar = new Promise((data,err)=>
+            {
+                if(1==1)
+                {
+                    return(data("connect"))
+                }
+                else
+                {
+                    return(err("disconnect"))
+                }
+            })
+
+            sagar.then(
+                //function(data){console.log(data)},
+                //function(err){console.log(err)}
+                function(data){dipak(data)},
+                function(err){dipak(data)}
+
+            )
+        </script>
+    </body>
+    </html>
+    
+</body>
+</html>
