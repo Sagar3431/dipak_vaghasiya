@@ -1,0 +1,29 @@
+1. What is React Router?
+React Router is a library that helps developers manage and navigate different routes in their React applications. React Router makes it easy to declare and render different components for each route, and also keeps your application’s state updated as you navigate between routes.
+
+2. Can you explain the main benefits of using React Router?
+React Router is a popular routing library for React that provides a number of benefits over other options. First, it offers a simple, declarative API that makes it easy to specify routes and map them to components. Second, React Router is designed to work with React’s component-based architecture, making it a natural fit for React applications. Finally, React Router is highly configurable and can be extended to meet the needs of any application.
+
+3. Is it possible to use React Router with server-side rendering? If yes, then how?
+Yes, it is possible to use React Router with server-side rendering. The way to do this is to use the StaticRouter component on the server, and then use the BrowserRouter component on the client.
+
+4. How does browser history work in React Router?
+React Router uses browser history in order to keep track of the current location within the app. This allows the user to use the back and forward buttons in their browser in order to navigate through the app.
+
+5. What are some examples of a router in React Router?
+A router in React Router is any object that provides the functionality for routing, such as React Router DOM and React Router Native.
+
+6. Can you give me an example of where and how you would use React Router?
+React Router is a library that helps with routing in React applications. It provides a set of components and functions that allow you to declaratively define your application’s routes, which makes it easy to keep your application’s UI in sync with the current URL. React Router is also flexible, so it can be used in a variety of different ways, such as in single-page applications, or in applications that use server-side rendering.
+
+7. Do all routers have to be declared on a single page or can they be spread across multiple pages?
+React Router can be spread across multiple pages. However, each router will need to be declared on a separate page.
+
+8. What is nested routing?
+Nested routing is when you have routes within other routes. This can be useful if you want to create a hierarchy of pages, for example if you have a blog with different categories and you want each category to have its own page with a list of posts. To do this, you would create a route for each category, and then nest the route for the posts within that.
+
+9. What are breadcrumbs used for in React Router?
+Breadcrumbs are typically used as a navigational aid, allowing users to keep track of their location within a website or application. In React Router, breadcrumbs can be used to dynamically generate a trail of links based on the user’s current location. This can be especially helpful in large applications with complex routing.
+
+10. What do you understand about the ‘to’ attribute in React Router?
+The ‘to’ attribute is used to specify the route that the user should be redirected to when they click on a link. The value of the ‘to’ attribute can either be a string, which will be interpreted as a relative path, or an object, which can specify the absolute path, query parameters, and so on.
