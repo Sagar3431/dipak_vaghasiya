@@ -1,0 +1,8 @@
+1 ans - react is Front-End Javascript framework/ library & Redux is also a Javascript library which is for global state management
+
+2.ans - allow us to write additional Redux-related logic separate from a UI layer.
+
+3.ans -  the type of component which re-renders only when the props passed to it changes and not even if its parent component re-renders or if the shouldComponentUpdate()method is called.
+
+4.ans -  an optional callback function that will be executed once setState is completed and the component is re-rendered
+
