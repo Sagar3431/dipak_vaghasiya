@@ -3,18 +3,20 @@ Write a Python program to count the number of characters (character frequency) i
 
 '''
 
-def count_character_frequency(input_string):
-    frequency_dict = {}
+# Define an empty dictionary to store character frequencies
+frequency_dict = {}
 
-    # Iterate through each character in the string
-    for char in input_string:
-        frequency_dict[char] = frequency_dict.get(char, 0) + 1
-
-    return frequency_dict
-
+# Prompt the user to enter a string and store it in the variable user_input
 user_input = input("Enter a string: ")
-character_frequency = count_character_frequency(user_input)
 
+# Iterate through each character in the input string
+for char in user_input:
+    # Increment the frequency count for the current character in the dictionary
+    # If the character is not in the dictionary, initialize its count to 1
+    frequency_dict[char] = frequency_dict.get(char, 0) + 1
+
+# Print the character frequencies
 print("Character frequency:")
-for char, frequency in character_frequency.items():
+for char, frequency in frequency_dict.items():
     print(f"'{char}': {frequency}")
+
