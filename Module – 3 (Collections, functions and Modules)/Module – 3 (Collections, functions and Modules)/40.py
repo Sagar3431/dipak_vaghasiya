@@ -10,3 +10,6 @@ mapped_dict = dict(zip(keys, values))
 
 # Print the resulting dictionary
 print("Mapped Dictionary:", mapped_dict)
+
+
+
