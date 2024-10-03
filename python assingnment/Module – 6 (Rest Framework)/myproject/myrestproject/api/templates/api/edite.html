@@ -1,0 +1,73 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .a{
+            background: #000;
+            padding: 10px;
+            color: #fff;
+        }
+        h1{
+            background: #000;
+            padding: 10px;
+            color: #fff;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="clearfix ">
+        <h1 style="text-align: center;">Update Your Details :</h1>
+        <form action="{%url 'edite' pk=book.id%}" method="post">
+            {% csrf_token %}
+        <div class="col-lg-12 col-md-12 main">
+            <div class="form-group">
+                <input type="text" class="form-control" value="{{book.Title}}" name="Title" placeholder="Title">
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 main">
+            <div class="form-group">
+                <input type="text" class="form-control" value="{{book.Author}}" name="Author" placeholder="Author">
+            </div>
+        </div>                                    
+        <div class="col-lg-12 col-md-12 main">
+            <div class="form-group">
+                <input type="text" class="form-control" value="{{book.Isbn}}" name="Isbn" placeholder="Isbn">
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 main">
+            <div class="form-group">
+                <input type="date" class="form-control" value="{{book.Publisher}}" name="Publisher" placeholder="Publisher">
+            </div>
+        </div>
+  
+      
+        <div class="col-md-12 main" style="margin-top: 20px;">
+            <input type="submit" class="btn btn-primary btn-round me-2" value="Save Changes">
+            <button class="btn btn-info"><a href="{%url 'home'%}">home</a></button>
+        </div>
+        
+    </form>
+    <div class="a">
+        <marquee behavior="" direction="">
+            <h3>
+                Click On Save Button After Click To Home Button And Go To Home Page
+            </h3>
+        </marquee>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .sub{
+            background: #000;
+            color: #fff;
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+            color: #f9f7f7;
+            font-weight: 600;
+        }
+        button{
+            background: #13db45;
+            padding: 20px;
+        }
+        .btn{
+            background: #000;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;background:#000;color:#fff;">Book Details</h1>
+     <div class="main">
+        <div class="sub">
+            <label for="first_name">Title</label>
+            <input type="text" value="{{book.Title}}" disabled>
+        </div>
+        <div class="sub">
+            <label for="last_name">Author</label>
+            <input type="text" value="{{book.Author}}" disabled>
+        </div>
+        <div class="sub">
+            <label for="city">Isbn</label>
+            <input type="text" value="{{book.Isbn}}" disabled>
+        </div>
+        <div class="sub">
+            <label for="subject">Publisher</label>
+            <input type="text" value="{{book.Publisher}}" disabled>
+        </div>
+        <div class="btn"></div>
+            <button><a href="{%url 'home'%}">Click Here To Home Page</a></button>
+        </div>
+     </div>
+</body>
+</html>
