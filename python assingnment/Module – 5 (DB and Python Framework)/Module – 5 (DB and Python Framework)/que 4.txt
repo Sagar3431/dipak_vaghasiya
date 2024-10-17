@@ -1,0 +1,39 @@
+What is Django URLs?make program to create django urls
+
+Django URLs are the foundation of how website's different pages and views are connected. They act like addresses 
+that users and search engines use to navigate your site. 
+ 
+URL Patterns:  URLs in Django are defined within a special file called urls.py.  This file contains a list of patterns 
+that map URLs to specific views in your Django application.
+ 
+
+ 
+ 
+Creating Django URLs:   
+
+ 
+ 
+Open myproject/myproject/urls.py and add the following: 
+      
+
+      from django.contrib import admin 
+      from django.urls import path, include 
+urlpatterns = [ 
+      path('admin/', admin.site.urls), 
+      path('', include('myapp.urls')),  # Add your app's URLs here 
+  ] 
+   
+ 
+
+ 
+ 
+Open myapp/urls.py and create patterns for your views: 
+     
+
+     from django.urls import path 
+     from . import views 
+urlpatterns = [ 
+     path('', views.home, name='home'),  # URL for the home page 
+     path('about/', views.about, name='about'),  # URL for the about page 
+ ] 
+ 

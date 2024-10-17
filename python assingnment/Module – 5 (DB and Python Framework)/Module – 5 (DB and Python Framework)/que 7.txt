@@ -1,0 +1,4 @@
+Explain what does django-admin.py make messages command is used 
+for? 
+django-admin.py make messagescommand is used to generate a message file for translating your Django application into 
+different languages. 
